@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="ssh://git@github.com"/>
+  <default revision="master" remote="github" sync-j="4" />
+
+  <!-- Personal Repositories -->
+  <project path="build/workspace" name="Mord3rca/repo-workspace">
+    <linkfile src="Makefile" dest="Makefile"/>
+  </project>
+  <project path="config/morderca-external" name="Mord3rca/buildroot-tree"/>
+  <project path="package/dyndns-updater" name="Mord3rca/dyndns-updater"/>
+
+  <!-- 3rd party provider(s) -->
+  <project path="build/buildroot" name="buildroot/buildroot"/>
+</manifest>
